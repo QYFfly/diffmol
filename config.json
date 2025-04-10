@@ -1,0 +1,54 @@
+{
+  "_comment1": "input_directory is the folder containing the input SDF files",
+  "input_directory": "/mnt_191/yf_qin/model/Diff-3D/test1/sdf",
+  
+  "_comment2": "output_directory is the output directory",
+  "output_directory": "/mnt_191/yf_qin/model/Diff-3D/test1/",
+  
+  "_comment3": "dataset can be either 'QM9' or 'Drug'",
+  "dataset": "QM9",
+  
+  "_comment4": "forcefield can be 'OPLS3' or 'MMFF'",
+  "forcefield": "OPLS3",
+  
+  "_comment5": "If using OPLS3, the ligprep_executable must be provided",
+  "ligprep_executable": "/mnt_191/yf_qin/software/data/qinyifei/Schrodinger2017/ligprep",
+
+  "_comment6": "Path to the training set SMILES file (used for novelty calculation)",
+  "train_smiles_file": "/mnt_191/yf_qin/model/Diff-3D/data/data_reference/QM9/QM9_smiles.txt",
+  
+  "_comment7": "Path to the training set file configuration, used for FDC calculation",
+  "training_set_file": "/mnt_191/yf_qin/model/Diff-3D/data/training_set_reference/QM9/smiles.smi",
+  
+  "_comment8": "Path to the precomputed fragment contribution scores file (fpscores), required for Synthetic Accessibility (SA) score calculation",
+  "fpscores": "/mnt_191/yf_qin/model/Diff-3D/data/fpscores.pkl.gz",
+  
+
+  "_comment9": {
+    "calculate_qed": "Whether to calculate the QED metric",
+    "calculate_sa": "Whether to calculate the SA metric"
+  },
+  "calculate_qed": true,
+  "calculate_sa": true,
+
+  "_comment10": {
+    "calculate_2d_properties": "Whether to calculate and extract 2D structural properties (includes two steps)",
+    "calculate_stability": "Whether to calculate the stability metric",
+    "calculate_fcd": "Whether to calculate the FCD score"
+  },
+  "calculate_2d_properties": true,
+  "calculate_stability": true,
+  "calculate_fcd": true,
+  
+  "_comment11": {
+    "calculate_overall_diversity": "Whether to calculate the overall diversity metric",
+    "calculate_scaffold_diversity": "Whether to calculate the scaffold diversity metric"
+  },
+  "calculate_overall_diversity": true,
+  "calculate_scaffold_diversity": true,
+
+  "_comment12": {
+    "calculate_geometry_metrics": "Whether to perform all geometry-related calculations (force field preparation, geometry parameters, and similarity metrics)"
+  },
+  "calculate_geometry_metrics": true
+}
