@@ -1,9 +1,9 @@
 {
   "_comment1": "input_directory is the folder containing the input SDF files",
-  "input_directory": "/mnt_191/yf_qin/model/Diff-3D/test1/sdf",
+  "input_directory": "Diff-3D/data/QM9/sdf",
   
   "_comment2": "output_directory is the output directory",
-  "output_directory": "/mnt_191/yf_qin/model/Diff-3D/test1/",
+  "output_directory": "Diff-3D/output/",
   
   "_comment3": "dataset can be either 'QM9' or 'Drug'",
   "dataset": "QM9",
@@ -12,16 +12,16 @@
   "forcefield": "OPLS3",
   
   "_comment5": "If using OPLS3, the ligprep_executable must be provided",
-  "ligprep_executable": "/mnt_191/yf_qin/software/data/qinyifei/Schrodinger2017/ligprep",
+  "ligprep_executable": "software/data/qinyifei/Schrodinger2017/ligprep",
 
   "_comment6": "Path to the training set SMILES file (used for novelty calculation)",
-  "train_smiles_file": "/mnt_191/yf_qin/model/Diff-3D/data/data_reference/QM9/QM9_smiles.txt",
+  "train_smiles_file": "Diff-3D/data/data_reference/QM9/QM9_smiles.txt",
   
   "_comment7": "Path to the training set file configuration, used for FDC calculation",
-  "training_set_file": "/mnt_191/yf_qin/model/Diff-3D/data/training_set_reference/QM9/smiles.smi",
+  "training_set_file": "Diff-3D/data/training_set_reference/QM9/smiles.smi",
   
   "_comment8": "Path to the precomputed fragment contribution scores file (fpscores), required for Synthetic Accessibility (SA) score calculation",
-  "fpscores": "/mnt_191/yf_qin/model/Diff-3D/data/fpscores.pkl.gz",
+  "fpscores": "Diff-3D/data/fpscores.pkl.gz",
   
 
   "_comment9": {
